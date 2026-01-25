@@ -1,0 +1,198 @@
+/* proofs-styles.css - ADDITIONAL STYLES FOR PROOFS PAGE */
+
+.proofs-hero {
+    background: linear-gradient(135deg, rgba(10,10,15,0.9), rgba(0,200,83,0.2));
+    padding: 120px 30px 60px;
+    text-align: center;
+    border-bottom: 3px solid var(--success-green);
+}
+
+/* FILTERS */
+.proof-filters {
+    max-width: 1300px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 25px;
+    background: var(--dark-card);
+    border: 2px solid transparent;
+    color: var(--text-gray);
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: var(--font-body);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: rgba(0,200,83,0.1);
+    color: var(--success-green);
+    border-color: var(--success-green);
+}
+
+/* STATS */
+.proof-stats {
+    max-width: 1300px;
+    margin: 60px auto;
+    padding: 40px;
+    background: linear-gradient(135deg, var(--dark-card), #151530);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+    border: 2px solid var(--primary-red);
+}
+
+.stat-box h3 {
+    font-size: 3rem;
+    color: var(--primary-red);
+    margin-bottom: 10px;
+    font-family: var(--font-heading);
+}
+
+.stat-box p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+}
+
+/* PROOFS GALLERY */
+.proofs-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.proofs-grid {
+    columns: 4;
+    column-gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    .proofs-grid { columns: 3; }
+}
+
+@media (max-width: 800px) {
+    .proofs-grid { columns: 2; }
+}
+
+@media (max-width: 600px) {
+    .proofs-grid { columns: 1; }
+}
+
+.proof-card {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    background: var(--dark-card);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.proof-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--success-green);
+    box-shadow: 0 15px 30px rgba(0,200,83,0.2);
+}
+
+.proof-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.proof-info {
+    padding: 20px;
+}
+
+.proof-type {
+    display: inline-block;
+    background: rgba(0,200,83,0.2);
+    color: var(--success-green);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.proof-desc {
+    color: var(--text-light);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.proof-date {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.proof-date i {
+    margin-right: 8px;
+    color: var(--primary-red);
+}
+
+/* NO PROOFS */
+.no-proofs {
+    text-align: center;
+    padding: 80px 30px;
+    color: var(--text-gray);
+    grid-column: 1 / -1;
+}
+
+.no-proofs i {
+    font-size: 4rem;
+    color: var(--text-gray);
+    margin-bottom: 20px;
+}
+
+/* LIGHTBOX */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(225,6,0,0.3);
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.close-lightbox:hover {
+    color: var(--primary-red);
+}

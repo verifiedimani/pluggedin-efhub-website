@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - PluggedIn EFHub | Accounts, Coins & Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop-styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- LOADER -->
+    <div class="loader">
+        <div class="coin-spin"><i class="fas fa-store"></i></div>
+        <p>Loading Shop...</p>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="pluggedin-logo">
+                <div class="plug-icon">🔌</div>
+                <div class="logo-text">PluggedIn<span>EFHub</span></div>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="shop.html" class="nav-link active"><i class="fas fa-store"></i> Shop</a></li>
+                <li><a href="proofs.html" class="nav-link"><i class="fas fa-badge-check"></i> Proofs</a></li>
+                <li><a href="order.html" class="nav-link"><i class="fas fa-play-circle"></i> How to Order</a></li>
+            </ul>
+
+            <div class="konami-badge">
+                <i class="fas fa-check-circle"></i> PARTNER WITH KONAMI™
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-link"><i class="fas fa-home"></i> Home</a>
+            <a href="shop.html" class="mobile-link active"><i class="fas fa-store"></i> Shop</a>
+            <a href="proofs.html" class="mobile-link"><i class="fas fa-badge-check"></i> Proofs</a>
+            <a href="order.html" class="mobile-link"><i class="fas fa-play-circle"></i> How to Order</a>
+            
+            <a href="https://wa.me/+13612813525?text=Hello%20PluggedIn%20EFHub!%20I'm%20interested%20in%20your%20eFootball%20services." 
+               class="btn-whatsapp-mobile" target="_blank">
+                <i class="fab fa-whatsapp"></i> Order Now
+            </a>
+            
+            <div class="konami-badge" style="background: rgba(225,6,0,0.2); color: var(--primary-red); padding: 10px; text-align: center;">
+                <i class="fas fa-check"></i> KONAMI™ Partner
+            </div>
+        </div>
+    </nav>
+
+    <!-- SHOP HERO -->
+    <section class="shop-hero">
+        <h1 class="hero-title">SHOP <span class="highlight">PLUGGEDIN</span></h1>
+        <p class="hero-subtitle">Premium Accounts • Cheapest Coins • Pro Services</p>
+    </section>
+
+    <!-- TABS SECTION -->
+    <div class="tab-container">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="coins">🪙 COINS</button>
+            <button class="tab-btn" data-tab="accounts">👤 ACCOUNTS</button>
+            <button class="tab-btn" data-tab="services">⚙️ SERVICES</button>
+        </div>
+
+        <!-- COINS TAB -->
+        <div class="tab-content active" id="coins-tab">
+            <h2 class="section-title">GET <span class="highlight">CHEAPER COINS</span> TODAY</h2>
+            <p class="section-subtitle">Save up to 50% compared to Konami's official prices</p>
+            
+            <div class="coin-table-container">
+                <table class="coin-table">
+                    <thead>
+                        <tr>
+                            <th>COINS PACKAGE</th>
+                            <th>OUR PRICE (₹)</th>
+                            <th>OUR PRICE ($)</th>
+                            <th>KONAMI PRICE (Approx.)</th>
+                            <th>YOU SAVE</th>
+                            <th>ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1,000 🪙</strong></td>
+                            <td><strong>820₹</strong></td>
+                            <td><strong>$9</strong></td>
+                            <td><del>$18</del></td>
+                            <td class="price-save">Save $9</td>
+                            <td><button class="buy-btn" data-coins="1,000 🪙">BUY NOW</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2,130 🪙</strong></td>
+                            <td><strong>1,500₹</strong></td>
+                            <td><strong>$17</strong></td>
+                            <td><del>$34</del></td>
+                            <td class="price-save">Save $17</td>
+                            <td><button class="buy-btn" data-coins="2,130 🪙">BUY NOW</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>3,250 🪙</strong></td>
+                            <td><strong>2,300₹</strong></td>
+                            <td><strong>$25</strong></td>
+                            <td><del>$50</del></td>
+                            <td class="price-save">Save $25</td>
+                            <td><button class="buy-btn" data-coins="3,250 🪙">BUY NOW</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>5,700 🪙</strong></td>
+                            <td><strong>3,700₹</strong></td>
+                            <td><strong>$41</strong></td>
+                            <td><del>$82</del></td>
+                            <td class="price-save">Save $41</td>
+                            <td><button class="buy-btn" data-coins="5,700 🪙">BUY NOW</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>12,800 🪙</strong></td>
+                            <td><strong>7,500₹</strong></td>
+                            <td><strong>$84</strong></td>
+                            <td><del>$168</del></td>
+                            <td class="price-save">Save $84</td>
+                            <td><button class="buy-btn" data-coins="12,800 🪙">BUY NOW</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>25,600 🪙</strong></td>
+                            <td><strong>14,800₹</strong></td>
+                            <td><strong>$162</strong></td>
+                            <td><del>$324</del></td>
+                            <td class="price-save">Save $162</td>
+                            <td><button class="buy-btn" data-coins="25,600 🪙">BUY NOW</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="notice-box">
+                <h3><i class="fas fa-shield-alt"></i> 100% SAFE & LEGIT</h3>
+                <p>Both Android & iOS coins available. No ban risk. Delivery within minutes after payment confirmation.</p>
+            </div>
+        </div>
+
+        <!-- ACCOUNTS TAB -->
+        <div class="tab-content" id="accounts-tab">
+            <h2 class="section-title">PREMIUM <span class="highlight">ACCOUNTS</span></h2>
+            <p class="section-subtitle">Buy, Sell, or Swap accounts with top players & high ratings</p>
+            
+            <div class="account-grid">
+                <!-- ACCOUNT 1 -->
+                <div class="account-card">
+                    <div class="account-img">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="account-details">
+                        <h3>LEGEND ACCOUNT</h3>
+                        <ul class="account-features">
+                            <li><i class="fas fa-check"></i> 5+ Legend Players</li>
+                            <li><i class="fas fa-check"></i> Team Strength 3200+</li>
+                            <li><i class="fas fa-check"></i> 500K+ GP</li>
+                            <li><i class="fas fa-check"></i> All Featured Players</li>
+                        </ul>
+                        <div class="account-price">$149.99</div>
+                        <button class="account-action-btn" data-product="Legend Account">
+                            <i class="fab fa-whatsapp"></i> INQUIRE ON WHATSAPP
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ACCOUNT 2 -->
+                <div class="account-card">
+                    <div class="account-img">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="account-details">
+                        <h3>EPIC TEAM ACCOUNT</h3>
+                        <ul class="account-features">
+                            <li><i class="fas fa-check"></i> Full Epic Squad</li>
+                            <li><i class="fas fa-check"></i> 10+ POTW Players</li>
+                            <li><i class="fas fa-check"></i> Team Strength 3500+</li>
+                            <li><i class="fas fa-check"></i> 300 Coins Remaining</li>
+                        </ul>
+                        <div class="account-price">$199.99</div>
+                        <button class="account-action-btn" data-product="Epic Team Account">
+                            <i class="fab fa-whatsapp"></i> INQUIRE ON WHATSAPP
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ACCOUNT 3 -->
+                <div class="account-card">
+                    <div class="account-img">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <div class="account-details">
+                        <h3>ACCOUNT SWAP</h3>
+                        <ul class="account-features">
+                            <li><i class="fas fa-check"></i> Trade Your Account</li>
+                            <li><i class="fas fa-check"></i> Get Better Value</li>
+                            <li><i class="fas fa-check"></i> Safe Middleman Service</li>
+                            <li><i class="fas fa-check"></i> 100% Secure Transfer</li>
+                        </ul>
+                        <div class="account-price">Varies</div>
+                        <button class="account-action-btn" data-product="Account Swap">
+                            <i class="fab fa-whatsapp"></i> START SWAP ON WHATSAPP
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <p class="section-subtitle">Don't see what you need? Message us with your specific requirements!</p>
+                <a href="https://wa.me/+13612813525?text=Hello%20PluggedIn%20EFHub!%20I'd%20like%20to%20request%20a%20custom%20eFootball%20account.%20Please%20advise." 
+                   class="btn-pluggedin-primary" target="_blank" style="display: inline-flex;">
+                    <i class="fab fa-whatsapp"></i> REQUEST CUSTOM ACCOUNT
+                </a>
+            </div>
+        </div>
+
+        <!-- SERVICES TAB -->
+        <div class="tab-content" id="services-tab">
+            <h2 class="section-title">PRO <span class="highlight">SERVICES</span></h2>
+            <p class="section-subtitle">Level up your game with our expert team building and strategy services</p>
+            
+            <div class="service-card-shop">
+                <h3>TEAM BUILDING SERVICE</h3>
+                <p>Let our pros build your dream squad. We analyze your players, suggest formations, and create a winning strategy tailored to your playstyle.</p>
+                
+                <div class="service-features">
+                    <div class="service-feature">
+                        <i class="fas fa-chess-board"></i>
+                        <h4>Custom Formations</h4>
+                        <p>Optimal formation based on your players' strengths.</p>
+                    </div>
+                    <div class="service-feature">
+                        <i class="fas fa-user-friends"></i>
+                        <h4>Player Selection</h4>
+                        <p>Which players to buy/upgrade for maximum value.</p>
+                    </div>
+                    <div class="service-feature">
+                        <i class="fas fa-trophy"></i>
+                        <h4>Winning Strategy</h4>
+                        <p>Attack/defense patterns for competitive play.</p>
+                    </div>
+                </div>
+
+                <div class="service-action-btns">
+                    <button class="account-action-btn" data-product="Team Building Service">
+                        <i class="fab fa-whatsapp"></i> GET TEAM BUILDING
+                    </button>
+                    <a href="order.html" class="btn-pluggedin-secondary">
+                        <i class="fas fa-info-circle"></i> HOW IT WORKS
+                    </a>
+                </div>
+            </div>
+
+            <div class="service-card-shop">
+                <h3>PERSONAL COACHING</h3>
+                <p>1-on-1 sessions to improve your skills, learn advanced techniques, and climb the rankings faster with direct feedback from pro players.</p>
+                <div class="service-action-btns">
+                    <button class="account-action-btn" data-product="Personal Coaching">
+                        <i class="fab fa-whatsapp"></i> BOOK COACHING SESSION
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>PluggedIn EFHub</h3>
+                <p>Your ultimate destination for safe, affordable, and premium eFootball services since 2019.</p>
+                <p class="konami-footer"><i class="fas fa-check-circle"></i> <strong>OFFICIAL PARTNER WITH KONAMI™</strong></p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="proofs.html">Proofs</a>
+                <a href="order.html">How to Order</a>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Get In Touch</h4>
+                <a href="https://wa.me/+13612813525?text=Hello%20PluggedIn%20EFHub!%20I'm%20interested%20in%20your%20eFootball%20services." 
+                   target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp: +1 (361) 281-3525
+                </a>
+                <a href="https://chat.whatsapp.com/YOUR_COMMUNITY_LINK" target="_blank">
+                    <i class="fas fa-user-friends"></i> Community Group
+                </a>
+                <a href="https://chat.whatsapp.com/YOUR_ANNOUNCEMENTS_LINK" target="_blank">
+                    <i class="fas fa-bullhorn"></i> Announcements Group
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 PluggedIn EFHub Store. All rights reserved. This site is not affiliated with Konami Digital Entertainment.</p>
+            <p class="footer-payment-text">We accept: PayPal, Binance, Zelle, Cash App, Nigerian Banks, Google Pay & more</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/+13612813525?text=Hello%20PluggedIn%20EFHub!%20I'm%20interested%20in%20your%20eFootball%20services." 
+       class="float-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Loader
+        window.addEventListener('load', function() {
+            const loader = document.querySelector('.loader');
+            setTimeout(() => {
+                loader.classList.add('fade-out');
+            }, 1000);
+        });
+
+        // Mobile menu
+        document.getElementById('hamburger')?.addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobileMenu').classList.remove('active');
+            });
+        });
+
+        // Tab Switching
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const tabId = this.getAttribute('data-tab');
+                
+                // Update buttons
+                tabBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Update content
+                tabContents.forEach(content => {
+                    content.classList.remove('active');
+                    if (content.id === `${tabId}-tab`) {
+                        content.classList.add('active');
+                    }
+                });
+            });
+        });
+
+        // WhatsApp buttons
+        document.querySelectorAll('.buy-btn, .account-action-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                let product = this.getAttribute('data-product') || 
+                             this.getAttribute('data-coins') || 
+                             'Product Inquiry';
+                
+                const message = `Hello PluggedIn EFHub! I'm interested in: ${product}. Please provide details.`;
+                const whatsappUrl = `https://wa.me/+13612813525?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
